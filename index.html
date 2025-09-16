@@ -1,1 +1,138 @@
-# zy5222.gitub.io
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <title>Feedback</title>
+    <style>
+      #top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        background-color: #F8F8FF;
+        height: 180px;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 50px;
+        margin: 0;
+      }
+      .link {
+        display: flex;
+        gap: 18px;
+        font-size: 18px;
+      }
+      .link a {
+        color: black;
+        text-decoration: none;
+      }
+      .link a:hover {
+        text-decoration: underline;
+      }
+        .feedback-title {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+
+        body {
+            background-color: white;
+            margin: 0;
+           
+        }
+        form {
+            width: 90%;
+            max-width: 600px;
+            margin: 30px auto; 
+            background-color: white;
+            color: #483D8B;
+            border-radius: 8px;
+            padding: 20px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 20px;
+            color: #191970;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="text"], input[type="radio"], input[type="checkbox"], textarea {
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #a9a9a9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color:#dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1>pie pieee</h1>
+        <div class="link">
+            <a href="mid-project.html">Company Profile</a>
+            <a href="menu.html">Menu</a>
+            <a href="member.html">Member</a>
+            <a href="money.html">Financial Statements</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </div>
+    <div class="feedback-title">
+        Feedback
+    </div>
+    <form action="MAILTO:" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Customer Feedback</legend>
+
+            <label for="name">姓名：</label>
+            <input name="name" type="text"><br>
+
+            <label>性別：</label>
+            <input name="gender" type="radio" value="男">男
+            <input name="gender" type="radio" value="女">女<br>
+
+            <label>訂購商品：</label><br>
+            <input type="checkbox" name="pie" value="法式白葡萄卡士達塔">法式白葡萄卡士達塔<br>
+            <input type="checkbox" name="pie" value="經典檸檬塔">經典檸檬塔<br>
+            <input type="checkbox" name="pie" value="草莓卡士達塔">草莓卡士達塔<br>
+            <input type="checkbox" name="pie" value="蘋果狂想曲之蘋果塔">蘋果狂想曲之蘋果塔<br>
+            <input type="checkbox" name="pie" value="比利時巧克力野莓塔">比利時巧克力野莓塔<br>
+            <input type="checkbox" name="pie" value="草莓紐約乳酪蛋糕">草莓紐約乳酪蛋糕<br>
+
+            <label for="feedback">顧客建議：</label><br>
+            <textarea name="feedback" cols="50" rows="5"></textarea><br><br>
+
+            <input type="submit" value="送出">
+            <input type="reset" value="重新填寫">
+        </fieldset>
+    </form>
+
+</body>
+</html>
+
