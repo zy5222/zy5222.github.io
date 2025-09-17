@@ -1,1 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+ <meta charset="UTF-8">  
+    <title>menu</title>
+<style>
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: #F8F8FF;
+    height: 180px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
 
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.link {
+    display: flex;
+    gap: 18px;
+    font-size: 18px;
+}
+
+.link a {
+    color: black;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.td {
+    font-size: 25px;
+    color: #191970;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    padding-top: 50px; 
+}
+.title {
+    margin-top: 250px; 
+    text-align: center;
+    font-size: 35px;
+}
+.item {
+    flex: 1 1 calc(33.33% - 40px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #FFF;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.item:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+h3 {
+    font-size: 20px;
+    color: #191970;
+}
+
+p {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    text-align: center;
+}
+
+.price {
+    font-size: 18px;
+    color: #ff6347;
+    font-weight: bold;
+    margin: 10px 0;
+}
+</style>
+</head>
+<body>
+    <div id="top">
+    <h1>WZY52</h1>
+    <div class="link">
+        
+        <a href="index.html">About Me</a>
+    </div>
+</div>
+    <div class="title">
+    <center><font size="35px">About Me</font></center>
+</div>
+    <div class="container">
+        <div class="item">
+            <h3>學歷</h3>
+			 <p><strong>高中:</strong> 彰化女中普通班</p>
+             <p><strong>大學:</strong> 元智大學資工系</p>
+        </div>
+        <div class="item">
+            <h3>GitHub Repository</h3>
+            <p>
+              <a href="https://zy5222.github.io/11401_CS203A/">11401_CS203A</a>
+            </p> 
+        </div>
+        <div class="item">
+            <h3>聯繫方式</h3>
+            <p><strong>s1131547@mail.yzu.edu.tw</strong></p>
+            <p><strong>zhiyunwang960@gmail.com</strong></p>
+        </div>
+        
+    </div>
+</body>
+</html>
